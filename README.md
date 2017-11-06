@@ -42,11 +42,11 @@ __IPv6 commands will only work if your server has external IPv6 setup (or tunnel
 4. Run `bash configure.sh`
 5. Follow the instructions and `configure.sh` will take care of the rest
 
-wget https://cdn.ipip.net/17mon/besttrace4linux.zip
-unzip besttrace4linux.zip
-chmod +x besttrace
-cp ./besttrace /usr/local/bin/
-echo "www ALL=(root)  NOPASSWD:/usr/local/bin/besttrace" >> /etc/sudoers
+`wget https://cdn.ipip.net/17mon/besttrace4linux.zip`<br />
+`unzip besttrace4linux.zip`<br />
+`chmod +x besttrace`<br />
+`cp ./besttrace /usr/local/bin/`<br />
+`echo "www ALL=(root)  NOPASSWD:/usr/local/bin/besttrace" >> /etc/sudoers`<br />
 
 _Forgot a setting? Simply run the `configure.sh` script again_
 
