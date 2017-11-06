@@ -128,6 +128,14 @@ class LookingGlass
         }
         return false;
     }
+    
+    public function besttrace($host, $fail = 2)
+    {
+        if ($host = $this->validate($host)) {
+            return $this->procExecute('sudo /usr/local/bin/besttrace', $host, $fail);
+        }
+        return false;
+    }
 
     /**
      * Execute a 'traceroute6' command against given host:
