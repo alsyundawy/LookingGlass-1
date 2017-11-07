@@ -46,7 +46,7 @@ if (isset($_GET['cmd']) && isset($_GET['host'])) {
         //    exit();
         //}
         if (isset($_GET['port'])) {
-            $output = $lg->{$_GET['cmd']}($_GET['host']);
+            $output = $lg->{$_GET['cmd']}($_GET['port'])($_GET['host']);
             if ($output) {
                 exit();
             }
