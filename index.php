@@ -117,6 +117,7 @@ if (file_exists('LookingGlass/Config.php')) {
                   <option value="traceroute">traceroute</option>
                   <?php if (!empty($ipv6)) { echo '<option value="traceroute6">traceroute6</option>'; } ?>
                   <option value="besttrace">besttrace</option>
+                  <option value="hping3">hping3</option>
                 </select>
                 <button type="submit" id="submit" name="submit" class="btn btn-primary" style="margin-left: 10px;">Run Test</button>
               </fieldset>
