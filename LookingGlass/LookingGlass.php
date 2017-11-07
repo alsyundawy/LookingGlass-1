@@ -136,6 +136,14 @@ class LookingGlass
         }
         return false;
     }
+    
+    public function hping3($port, $host, $fail = 2)
+    {
+        if ($host = $this->validate($host)) {
+            return $this->procExecute('sudo /usr/sbin/hping3 -c4 -S -p', $port, $host, $fail);
+        }
+        return false;
+    }
 
     /**
      * Execute a 'traceroute6' command against given host:
