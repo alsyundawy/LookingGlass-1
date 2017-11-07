@@ -41,9 +41,20 @@ if (isset($_GET['cmd']) && isset($_GET['host'])) {
         $limit->rateLimit($rateLimit);
 
         // execute command
-        $output = $lg->{$_GET['cmd']}($_GET['host']);
-        if ($output) {
-            exit();
+        //$output = $lg->{$_GET['cmd']}($_GET['host']);
+        //if ($output) {
+        //    exit();
+        //}
+        if (isset($_GET['port'])) {
+            $output = $lg->{$_GET['cmd']}($_GET['host']);
+            if ($output) {
+                exit();
+            }
+        } else {
+            $output = $lg->{$_GET['cmd']}($_GET['host']);
+            if ($output) {
+                exit();
+            }
         }
     }
 }
