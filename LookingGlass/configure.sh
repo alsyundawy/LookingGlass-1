@@ -193,7 +193,7 @@ EOF
   fi
 
   # Array of required functions
-  local REQUIRE=(host mtr iputils-ping traceroute sqlite3)
+  local REQUIRE=(host mtr iputils-ping traceroute sqlite3 hping3)
 
   # Loop through required & install
   for i in "${REQUIRE[@]}"; do
@@ -217,6 +217,15 @@ EOF
       fi
     # Check both bin and sbin
     elif [ $i = 'traceroute' ]; then
+      echo "Checking for $i..."
+      if [ ! -f "/usr/bin/$i" ]; then
+        if [ ! -f "/usr/sbin/$i" ]; then
+          ${INSTALL} -y install ${i}
+          echo
+        fi
+      fi
+    # Check for hping3
+    elif [ $i = 'hping3' ]; then
       echo "Checking for $i..."
       if [ ! -f "/usr/bin/$i" ]; then
         if [ ! -f "/usr/sbin/$i" ]; then
