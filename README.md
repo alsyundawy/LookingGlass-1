@@ -38,7 +38,7 @@ __IPv6 commands will only work if your server has external IPv6 setup (or tunnel
 ## Install
 
 1. `git clone https://github.com/max2max/LookingGlass`
-3. `cd LookingGlass`
+3. `cd LookingGlass/LookingGlass`
 4. Run `bash configure.sh`
 5. Follow the instructions and `configure.sh` will take care of the rest
 
