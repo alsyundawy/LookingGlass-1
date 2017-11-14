@@ -185,7 +185,7 @@ class LookingGlass
      * @return boolean
      *   True on success
      */
-    private function procExecute($cmd, $port, $host, $failCount = 2)
+    private function procExecute($cmd, $host, $failCount = 2)
     {
         // define output pipes
         $spec = array(
@@ -197,7 +197,7 @@ class LookingGlass
         // sanitize + remove single quotes
         $host = str_replace('\'', '', filter_var($host, FILTER_SANITIZE_URL));
         // execute command
-        $process = proc_open("{$cmd} '{$port}' '{$host}'", $spec, $pipes, null);
+        $process = proc_open("{$cmd} '{$host}'", $spec, $pipes, null);
 
         // check pipe exists
         if (!is_resource($process)) {
