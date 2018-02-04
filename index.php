@@ -105,7 +105,7 @@ if (file_exists('LookingGlass/Config.php')) {
                 </div>
                 <div class="control-group">
                   <div class="controls">
-                    <input id="port" name="port" type="text" class="input-large" placeholder="Port number">
+                    <input id="port" name="port" type="number" class="input-small" placeholder="Port number">
                   </div>
                 </div>
                 <select name="cmd" class="input-medium" style="margin-left: 5px;">
