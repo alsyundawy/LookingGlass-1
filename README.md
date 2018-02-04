@@ -3,18 +3,18 @@
 
 ## Install
 
-`git clone https://github.com/max2max/LookingGlass`
-`cd LookingGlass/LookingGlass`
-`bash configure.sh`
+`git clone https://github.com/max2max/LookingGlass`<br />
+`cd LookingGlass/LookingGlass`<br />
+`bash configure.sh`<br />
 
 Follow the instructions
 
-`wget https://cdn.ipip.net/17mon/besttrace4linux.zip`
-`unzip besttrace4linux.zip`
-`chmod +x besttrace`
-`cp ./besttrace /usr/local/bin/`
-`echo "www ALL=(root)  NOPASSWD:/usr/local/bin/besttrace" >> /etc/sudoers`
-`echo "www ALL=(root)  NOPASSWD:/usr/sbin/hping3" >> /etc/sudoers`
+`wget https://cdn.ipip.net/17mon/besttrace4linux.zip`<br />
+`unzip besttrace4linux.zip`<br />
+`chmod +x besttrace`<br />
+`cp ./besttrace /usr/local/bin/`<br />
+`echo "www ALL=(root)  NOPASSWD:/usr/local/bin/besttrace" >> /etc/sudoers`<br />
+`echo "www ALL=(root)  NOPASSWD:/usr/sbin/hping3" >> /etc/sudoers`<br />
 
 ## License
 
