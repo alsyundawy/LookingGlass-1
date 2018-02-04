@@ -45,8 +45,8 @@ if (isset($_GET['cmd']) && isset($_GET['host'])) {
         //if ($output) {
         //    exit();
         //}
-        if (isset($_GET['port'])) {
-            $output = $lg->{$_GET['cmd']}($_GET['port'])($_GET['host']);
+        if ($_GET['cmd']=="hping3" && strlen($_GET['port'])>0) {
+            $output = $lg->{$_GET['cmd']}($_GET['port'], $_GET['host']);
             if ($output) {
                 exit();
             }
