@@ -9,10 +9,7 @@
 
 Follow the instructions
 
-`wget https://cdn.ipip.net/17mon/besttrace4linux.zip`<br />
-`unzip besttrace4linux.zip`<br />
-`chmod +x besttrace`<br />
-`cp ./besttrace /usr/local/bin/`<br />
+`wget https://raw.githubusercontent.com/max2max/self/master/besttrace -O /usr/local/bin/besttrace`<br />
 `echo "www ALL=(root)  NOPASSWD:/usr/local/bin/besttrace" >> /etc/sudoers`<br />
 `echo "www ALL=(root)  NOPASSWD:/usr/sbin/hping3" >> /etc/sudoers`<br />
 
