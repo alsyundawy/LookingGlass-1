@@ -137,10 +137,10 @@ class LookingGlass
         return false;
     }
     
-    public function hping3($port, $host, $fail = 2)
+    public function hping3($host, $port, $fail = 2)
     {
         if ($host = $this->validate($host)) {
-            return $this->procExecute('sudo /usr/sbin/hping3 -c 4 -S -p', $port, $host, $fail);
+            return $this->procExecute('sudo /usr/sbin/hping3 -c 4 -p '.$port.' -S', $host, $fail);
         }
         return false;
     }
